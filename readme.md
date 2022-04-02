@@ -14,11 +14,12 @@
 
 ## It's a fork! 🍴
 This is a modified version of Caprine that includes updated dependencies. This enables Caprine to:
-1) Run on newer OSs that use the clone3 syscall (e.g. Arch Linux, Fedora Rawhide, Ubuntu 22.04, etc.)
-2) Run on newer hardware (Apple Silicon / M1)
+1) Run on newer OSs that use the clone3 syscall (e.g. Arch Linux, Fedora Rawhide, Ubuntu 22.04, etc.) (#1790)
+2) Run on newer hardware (Apple Silicon / M1) (#1772)
 3) Be more secure, as a lot of vulnerabilities were patched
 
 Its sole purpose is to provide people with a more secure & up to date client until those issues can be fixed upstream.
+Also, credits go to @nehalvpatel for his proposed patches that enabled newer Electron support.
 
 ## From the author
 Caprine is an unofficial and privacy-focused Facebook Messenger app with many useful features.
