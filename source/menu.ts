@@ -698,7 +698,7 @@ ${debugInfo()}`;
 			},
 			aboutMenuItem({
 				icon: caprineIconPath,
-				copyright: 'Created by Sindre Sorhus',
+				copyright: 'Created by Sindre Sorhus - Maintained by Lefteris Garyfalakis',
 				website: 'https://sindresorhus.com/caprine'
 			})
 		);
