@@ -13,7 +13,7 @@
 </div>
 
 ## It's a fork! 🍴
-This is a **modified** version of Caprine that includes updated dependencies. This enables Caprine to:
+This is a **modified** version of Caprine that includes updated dependencies and other fixes. This enables Caprine to:
 1) Run on newer OSs that use the clone3 syscall (e.g. Arch Linux, Fedora Rawhide, Ubuntu 22.04, etc.) (#1790)
 2) Run on newer hardware (Apple Silicon / M1) (#1772)
 3) Be more secure, as a lot of vulnerabilities were patched
