@@ -665,7 +665,7 @@ Press Command/Ctrl+R in Caprine to see your changes.
 		}),
 		openUrlMenuItem({
 			label: 'Source Code',
-			url: 'https://github.com/sindresorhus/caprine'
+			url: 'https://github.com/lefterisgar/caprine'
 		}),
 		openUrlMenuItem({
 			label: 'Donate…',
