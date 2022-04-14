@@ -22,6 +22,13 @@ Its sole purpose is to provide people with a more secure & up to date client unt
 
 Also, credits go to @nehalvpatel for his proposed patches that enabled newer Electron support.
 
+## Packaging
+To package the project using electron-builder:
+```
+$ node_modules/.bin/electron-builder --linux Appimage deb rpm
+```
+This command will create an AppImage and native packages for Debian & Fedora.
+
 ## From the author
 Caprine is an unofficial and privacy-focused Facebook Messenger app with many useful features.
 
