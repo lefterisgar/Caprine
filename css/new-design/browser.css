@@ -1,3 +1,19 @@
+/* Custom native scrollbar */
+::-webkit-scrollbar {
+  width: 16px;
+}
+::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 16px 16px #bcc0c4;
+  border-radius: 8px;
+  border: solid 4px transparent;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 16px 16px #ffffff;
+}
+::-webkit-scrollbar-track:hover {
+  box-shadow: inset 0 0 16px 16px #f0f1f2;
+}
+
 /* Hide disabled scrollbar on the right side */
 body::-webkit-scrollbar {
 	width: 0;
