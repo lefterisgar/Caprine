@@ -4,7 +4,7 @@
 	"version": "2.55.4-4",
 	"description": "Elegant Facebook Messenger desktop app",
 	"license": "MIT",
-	"repository": "sindresorhus/caprine",
+	"repository": "lefterisgar/caprine",
 	"author": {
 		"name": "Lefteris Garyfalakis",
 		"email": "lefterisgar@gmail.com"
