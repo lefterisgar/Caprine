@@ -6,9 +6,8 @@
 	"license": "MIT",
 	"repository": "sindresorhus/caprine",
 	"author": {
-		"name": "Sindre Sorhus",
-		"email": "sindresorhus@gmail.com",
-		"url": "https://sindresorhus.com"
+		"name": "Lefteris Garyfalakis",
+		"email": "lefterisgar@gmail.com"
 	},
 	"main": "dist-js",
 	"engines": {
