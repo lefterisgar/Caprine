@@ -94,7 +94,11 @@ sudo dnf install caprine
 
 Also available as a [snap](https://snapcraft.io/caprine).
 
-*The AppImage needs to be [made executable](http://discourse.appimage.org/t/how-to-make-an-appimage-executable/80) after download.*
+*Note: [Fedora Silverblue](https://silverblue.fedoraproject.org), [Fedora Kinoite](https://kinoite.fedoraproject.org), [EndlessOS](https://endlessos.com), [CarbonOS](https://carbon.sh) and other immutable distributions only support Flatpak and/or AppImage.*
+
+*Note: On some distributions Flatpak must be [pre-configured manually](https://flatpak.org/setup).*
+
+*Note: The AppImage needs to be [made executable](http://discourse.appimage.org/t/how-to-make-an-appimage-executable/80) after download.*
 
 ### Windows
 
