@@ -76,6 +76,12 @@ Or with [Homebrew](https://brew.sh): `$ brew install caprine`
 
 ### Linux
 
+To get it working on almost any distribution use [Flatpak](https://flatpak.org) or [AppImage](https://appimage.org) version.
+
+[Flathub](https://flathub.org) is one of the best places to get Flatpak apps. Get the app from there using the button below.
+
+<a href='https://flathub.org/apps/details/com.sindresorhus.Caprine'><img width='240' alt='Download on Flathub' src='https://flathub.org/assets/badges/flathub-badge-en.png'/></a>
+
 [**Download**](https://github.com/sindresorhus/caprine/releases/latest) the `.AppImage` or `.deb` file.
 
 Arch Linux: `pacman -S caprine`
