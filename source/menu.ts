@@ -683,7 +683,7 @@ Press Command/Ctrl+R in Caprine to see your changes.
 ${debugInfo()}`;
 
 				openNewGitHubIssue({
-					user: 'sindresorhus',
+					user: 'lefterisgar',
 					repo: 'caprine',
 					body
 				});
