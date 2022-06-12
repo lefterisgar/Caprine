@@ -14,6 +14,15 @@ html.dark-mode ::-webkit-scrollbar-track:hover {
 	box-shadow: inset 0 0 16px 16px #ffffff10;
 }
 
+/* EXPERIMENTAL */
+/* Audio call icon (workaround for #1840) */
+html.dark-mode .s45kfl79.emlxlaya.bkmhp75w.spb7xbtv.bp9cbjyn.rt8b4zig.n8ej3o3l.agehan2d.sk4xxmp2.rq0escxv.pq6dq46d.taijpn5t.l9j0dhe7.tdjehn4e.tv7at329.thwo4zme {
+	filter: invert(0.86);
+}
+html.dark-mode .lzf7d6o1 {
+	filter: invert(0);
+}
+
 /* Top bar: App menu button color */
 /* Top bar: New message button color */
 .j83agx80.pfnyh3mw .ozuftl9m .a8c37x1j.ms05siws.hwsy1cff.b7h9ocf4 {
