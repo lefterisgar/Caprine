@@ -53,7 +53,7 @@ electronContextMenu({
 	}
 });
 
-app.setAppUserModelId('com.sindresorhus.caprine');
+app.setAppUserModelId('com.lefterisgar.caprine');
 
 if (!config.get('hardwareAcceleration')) {
 	app.disableHardwareAcceleration();
