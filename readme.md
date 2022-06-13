@@ -280,6 +280,7 @@ Then edit the automatically created GitHub Releases draft and publish.
 
 - [Sindre Sorhus](https://sindresorhus.com)
 - [Jarek Radosz](https://github.com/CvX)
+- [Lefteris Garyfalakis](https://github.com/lefterisgar)
 
 ## Links
 
