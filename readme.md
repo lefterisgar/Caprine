@@ -99,7 +99,7 @@ Also available as a [snap](https://snapcraft.io/caprine).
 
 *Note: On some distributions Flatpak must be [pre-configured manually](https://flatpak.org/setup).*
 
-*Note: The AppImage needs to be [made executable](http://discourse.appimage.org/t/how-to-make-an-appimage-executable/80) after download.*
+*Note: The AppImage needs to be [made executable](https://discourse.appimage.org/t/how-to-make-an-appimage-executable/80) after download.*
 
 ### Windows
 
