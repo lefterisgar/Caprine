@@ -47,6 +47,11 @@ html.dark-mode .lzf7d6o1 {
 	fill: currentColor;
 	color: var(--primary-text);
 }
+/* Right sidebar: Path of icon */
+.rq0escxv.l9j0dhe7.du4w35lb.j83agx80.cbu4d94t.g5gj957u.f4tghd1a.ifue306u.kuivcneq.t63ysoy8 [role='button'] svg path {
+	fill: currentColor;
+	color: var(--primary-text);
+}
 /* Right sidebar: search icon */
 .rq0escxv.l9j0dhe7.du4w35lb.j83agx80.cbu4d94t.g5gj957u.f4tghd1a.ifue306u.kuivcneq.t63ysoy8 [role='button'] svg[role='presentation'] path {
 	fill: currentColor;
@@ -75,4 +80,16 @@ html.dark-mode .gitj76qy {
 /* TODO: Remove when fixed by fb */
 .__fb-dark-mode .__fb-light-mode {
 	--primary-text: #e4e6eb;
+}
+
+/* Backgrounds of various buttons ("Visit Group", audio call, etc.) */
+/* TODO: Remove when fixed by fb, since -floating should not be here */
+.tdjehn4e {
+	background-color: var(--secondary-button-background-floating) !important;
+}
+
+/* Search results: Close button */
+/* TODO: Remove when fixed by fb, since --always-white is not good here */
+.q2y6ezfg {
+	background-color: var(--secondary-button-background) !important;
 }
