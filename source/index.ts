@@ -300,9 +300,12 @@ function createMainWindow(): BrowserWindow {
 			contextIsolation: true,
 			spellcheck: config.get('isSpellCheckerEnabled'),
 			plugins: true,
-			enableRemoteModule: true
+			//enableRemoteModule: true
 		}
 	});
+
+	require('@electron/remote/main').initialize()
+	require("@electron/remote/main").enable(win.webContents)
 
 	setUserLocale();
 	initRequestsFiltering();
