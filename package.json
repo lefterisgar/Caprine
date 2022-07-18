@@ -14,7 +14,7 @@
 		"node": ">=12"
 	},
 	"scripts": {
-		"postinstall": "electron-builder install-app-deps",
+		"postinstall": "patch-package && electron-builder install-app-deps",
 		"lint": "tsc && xo && stylelint \"css/**/*.css\"",
 		"test": "npm run lint",
 		"start": "tsc && electron .",
@@ -22,6 +22,7 @@
 		"release": "np"
 	},
 	"dependencies": {
+		"@electron/remote": "^2.0.8",
 		"@sindresorhus/do-not-disturb": "^1.1.0",
 		"electron-better-ipc": "^2.0.1",
 		"electron-context-menu": "^3.2.0",
@@ -45,10 +46,11 @@
 		"@types/facebook-locales": "^1.0.0",
 		"@types/lodash": "^4.14.181",
 		"del-cli": "^4.0.1",
-		"electron": "^13.6.9",
+		"electron": "^14.2.9",
 		"electron-builder": "^23.0.3",
 		"husky": "^8.0.1",
 		"np": "^7.6.1",
+		"patch-package": "^6.4.7",
 		"stylelint": "^14.6.1",
 		"stylelint-config-xo": "^0.21.0",
 		"typescript": "^4.7.3",
