@@ -46,7 +46,7 @@
 		"@types/facebook-locales": "^1.0.0",
 		"@types/lodash": "^4.14.181",
 		"del-cli": "^4.0.1",
-		"electron": "^14.2.9",
+		"electron": "^17.4.5",
 		"electron-builder": "^23.0.3",
 		"husky": "^8.0.1",
 		"np": "^7.6.1",
