@@ -296,7 +296,6 @@ function createMainWindow(): BrowserWindow {
 		autoHideMenuBar: config.get('autoHideMenuBar'),
 		webPreferences: {
 			preload: path.join(__dirname, 'browser.js'),
-			nativeWindowOpen: true,
 			contextIsolation: true,
 			spellcheck: config.get('isSpellCheckerEnabled'),
 			plugins: true,
