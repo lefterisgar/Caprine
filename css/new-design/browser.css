@@ -62,8 +62,12 @@ html.private-mode [role='navigation'] .pedkr2u6 li .d2edcug0.hpfvmrgz.qv66sw1b.c
 html.private-mode [role='row'] .j83agx80.btwxx1t3.pfnyh3mw.lhclo0ds.ni8dbmo4.stjgntxs.l9j0dhe7 {
 	filter: blur(5px);*/
 }
-/* Conversation: profile picture */
+/* Conversation: titlebar profile picture */
 html.private-mode .a8c37x1j.d2edcug0.sn7ne77z.bixrwtb6 {
+	filter: blur(5px);
+}
+/* Conversation: sender profile picture */
+html.private-mode [role='main'] .pfnyh3mw.aovydwv3.j83agx80 > span {
 	filter: blur(5px);
 }
 /* Conversation: name & last seen */
