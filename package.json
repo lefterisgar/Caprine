@@ -92,7 +92,7 @@
 		"asarUnpack": [
 			"static/Icon.png"
 		],
-		"appId": "com.sindresorhus.caprine",
+		"appId": "com.lefterisgar.caprine",
 		"mac": {
 			"category": "public.app-category.social-networking",
 			"electronUpdaterCompatibility": ">=2.15.0",
