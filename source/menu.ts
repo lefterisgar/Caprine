@@ -240,6 +240,7 @@ Press Command/Ctrl+R in Caprine to see your changes.
 	const preferencesSubmenu: MenuItemConstructorOptions[] = [
 		{
 			label: 'Privacy',
+			visible: is.development,
 			submenu: privacySubmenu
 		},
 		{
@@ -268,6 +269,7 @@ Press Command/Ctrl+R in Caprine to see your changes.
 		{
 			label: 'Show Message Preview in Notifications',
 			type: 'checkbox',
+			visible: is.development,
 			checked: config.get('notificationMessagePreview'),
 			click(menuItem) {
 				config.set('notificationMessagePreview', menuItem.checked);
@@ -277,6 +279,7 @@ Press Command/Ctrl+R in Caprine to see your changes.
 			label: 'Mute Notifications',
 			id: 'mute-notifications',
 			type: 'checkbox',
+			visible: is.development,
 			checked: config.get('notificationsMuted'),
 			click() {
 				sendAction('toggle-mute-notifications', {isNewDesign});
@@ -293,6 +296,7 @@ Press Command/Ctrl+R in Caprine to see your changes.
 		{
 			label: 'Show Unread Badge',
 			type: 'checkbox',
+			visible: is.development,
 			checked: config.get('showUnreadBadge'),
 			click() {
 				config.set('showUnreadBadge', !config.get('showUnreadBadge'));
@@ -404,7 +408,7 @@ Press Command/Ctrl+R in Caprine to see your changes.
 		{
 			label: 'Flash Window on Message',
 			type: 'checkbox',
-			visible: !is.macos,
+			visible: is.development,
 			checked: config.get('flashWindowOnMessage'),
 			click(menuItem) {
 				config.set('flashWindowOnMessage', menuItem.checked);
@@ -568,6 +572,7 @@ Press Command/Ctrl+R in Caprine to see your changes.
 	const conversationSubmenu: MenuItemConstructorOptions[] = [
 		{
 			label: 'Mute Conversation',
+			visible: is.development,
 			accelerator: 'CommandOrControl+Shift+M',
 			click() {
 				sendAction<INewDesign>('mute-conversation', {isNewDesign});
@@ -575,6 +580,7 @@ Press Command/Ctrl+R in Caprine to see your changes.
 		},
 		{
 			label: 'Hide Conversation',
+			visible: is.development,
 			accelerator: 'CommandOrControl+Shift+H',
 			click() {
 				sendAction<INewDesign>('hide-conversation', {isNewDesign});
@@ -582,16 +588,15 @@ Press Command/Ctrl+R in Caprine to see your changes.
 		},
 		{
 			label: 'Delete Conversation',
+			visible: is.development,
 			accelerator: 'CommandOrControl+Shift+D',
 			click() {
 				sendAction<INewDesign>('delete-conversation', {isNewDesign});
 			}
 		},
 		{
-			type: 'separator'
-		},
-		{
 			label: 'Select Next Conversation',
+			visible: is.development,
 			accelerator: 'Control+Tab',
 			click() {
 				sendAction('next-conversation');
@@ -599,16 +604,15 @@ Press Command/Ctrl+R in Caprine to see your changes.
 		},
 		{
 			label: 'Select Previous Conversation',
+			visible: is.development,
 			accelerator: 'Control+Shift+Tab',
 			click() {
 				sendAction('previous-conversation');
 			}
 		},
 		{
-			type: 'separator'
-		},
-		{
 			label: 'Find Conversation',
+			visible: is.development,
 			accelerator: 'CommandOrControl+K',
 			click() {
 				sendAction('find');
@@ -616,6 +620,7 @@ Press Command/Ctrl+R in Caprine to see your changes.
 		},
 		{
 			label: 'Search in Conversation',
+			visible: is.development,
 			accelerator: 'CommandOrControl+F',
 			click() {
 				sendAction('search', isNewDesign);
