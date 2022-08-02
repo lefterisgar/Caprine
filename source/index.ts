@@ -297,6 +297,7 @@ function createMainWindow(): BrowserWindow {
 		webPreferences: {
 			preload: path.join(__dirname, 'browser.js'),
 			contextIsolation: true,
+			nodeIntegration: true,
 			spellcheck: config.get('isSpellCheckerEnabled'),
 			plugins: true,
 		}
