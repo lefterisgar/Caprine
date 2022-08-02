@@ -830,7 +830,7 @@ html.dark-mode body.UIPage_LoggedOut ._4-u5 /* 2FA screen */ {
 	background-color: var(--container-dark-color);
 }
 
-/* Login tile and names */
+/* Login title and names */
 html.dark-mode ._5hy4,
 html.dark-mode ._3403 {
 	color: var(--base-fourty) !important;
