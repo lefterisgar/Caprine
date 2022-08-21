@@ -1,28 +1,10 @@
 name: CI
 on:
   - push
-  - pull_request
   - workflow_dispatch
 jobs:
-  test:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 16
-      - uses: c-hive/gha-npm-cache@v1
-      - run: npm ci
-      - run: npm test
   build:
-    needs: [test]
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        os:
-          - macos-latest
-          - ubuntu-latest
-          - windows-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Check out code
         uses: actions/checkout@v3
@@ -35,16 +17,11 @@ jobs:
       - name: Setup cache
         uses: c-hive/gha-npm-cache@v1
 
-      - name: Install Snapcraft
-        uses: samuelmeuli/action-snapcraft@v1
-        if: startsWith(matrix.os, 'ubuntu')
-
       - name: Build & publish Caprine
         uses: samuelmeuli/action-electron-builder@v1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          release: ${{ startsWith(github.ref, 'refs/tags/v') }}
-          mac_certs: ${{ secrets.CSC_LINK }}
-          mac_certs_password: ${{ secrets.CSC_KEY_PASSWORD }}
-        env:
-          SNAPCRAFT_STORE_CREDENTIALS: ${{ secrets.snapcraft_token }}
+          release: false
+
+      - name: Upload to Gemfury
+        run: curl -F package=@$(find . -type f -name "*.deb") https://${{ secrets.gemfury_token }}@push.fury.io/lefterisgar/
