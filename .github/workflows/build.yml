@@ -1,7 +1,8 @@
 name: Build and publish
 on:
-  create:
-    - tag
+  push:
+    tags:
+      - "*"
 jobs:
   Build:
     runs-on: ubuntu-latest
