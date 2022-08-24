@@ -4,7 +4,7 @@ on:
     - cron: 0 */12 * * *
   workflow_dispatch:
 jobs:
-  sync:
+  Sync:
     runs-on: ubuntu-latest
     steps:
       - name: Check out code
@@ -30,6 +30,6 @@ jobs:
         with:
           tag: ${{ steps.check-for-release.outputs.tag }}
           message: "Latest release"
-  build:
+  Build:
     needs: [sync]
     uses: ./.github/workflows/build.yml
