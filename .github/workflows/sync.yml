@@ -30,6 +30,3 @@ jobs:
         with:
           tag: ${{ steps.check-for-release.outputs.tag }}
           message: "Latest release"
-  Build:
-    needs: [sync]
-    uses: ./.github/workflows/build.yml
